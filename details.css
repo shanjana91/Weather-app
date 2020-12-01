@@ -1,0 +1,44 @@
+.body{
+    background-image: url(/static/imgs/clouds.jpg);
+}
+
+.body-content{
+    max-width: 500px;
+    margin-top: 100px;
+    margin-left: 400px;
+    background-color: crimson;
+    border:None;
+    border-radius: 10px;
+    padding:10px;
+    font-family: 'Courier New';
+    text-align: center;
+}
+
+#city{
+    font-weight: bolder;
+    font-size:x-large;
+}
+#desc{
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#temp{
+    color:whitesmoke;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: 'Lucida Sans';
+}
+
+.back{
+    max-width: 500px;
+   
+    margin-left: 630px;
+    text-decoration: none;
+    background-color: darksalmon;
+    color:whitesmoke;
+    font-size: medium;
+    font-family: 'Courier New';
+    padding:10px;
+
+}

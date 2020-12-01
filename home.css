@@ -1,0 +1,71 @@
+.body{
+    background-image: url('/static/imgs/clouds.jpg');
+
+}
+.submit, .pin,.view,.remove{
+    background-color: crimson;
+    color:white;
+    text-align: center;
+    font-size: 15px;
+    border:None;
+    border-radius: 3px;
+    font-family: 'Courier New';
+}
+
+.submit, .pin{
+    padding: 7px;
+}
+.view,.remove{
+    padding: 4px;
+    text-decoration: None;
+
+}
+
+.submit:hover,.pin:hover,.view:hover,.remove:hover{
+    background-color:crimson;
+    opacity: 0.9;
+}
+
+.body_content{
+    max-width: 700px;
+    margin-top: 60px;
+    margin-left: 300px;
+    background-color:lightblue;
+    padding:30px ;
+    
+}
+
+.pinned_list,.pin_heading{
+    max-width: 700px;
+    margin-left: 320px;
+    padding:5px ;
+    font-size: medium;
+}
+
+.pinned_list{
+    background-color:lightblue;
+    
+}
+
+.pin_heading{
+   background-color:lightseagreen;
+   padding:5px;
+   text-align: center;
+   font-size:large;
+   font-family: 'Courier New';
+   margin-top: 10px;
+}
+
+.label1,.label2{
+    font-size:larger;
+    font-weight: bold;
+    font-family: 'sans-serif';
+}
+
+.heading1,.heading2{
+    font-family: 'Verdena';
+}
+
+.text1,.text2{
+    padding:5px;
+}

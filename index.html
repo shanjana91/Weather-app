@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width,initial-scale=0.1">
+    <title>Weather app</title>
+    <link rel="stylesheet"  href="/static/home.css">
+</head>
+<body class='body'>
+    <div class='body_content'>
+    <h1 class='heading1'>What's the Weather like today ?</h1>
+    <form action="weather_details" method="POST">
+        <label class='label1' for ="inputbox">Enter city name : </label>
+        <input class='text1' type="text" name="inputbox" >
+        <input  class='submit' type="submit" value ="Get weather details">
+        <br><br>
+       
+    </form>
+    <form action="pin_city" method="POST">
+        <h1 class='heading2'> Pin your favourite City</h1>
+        <Label class='label2' for="pin">Enter a city name to pin :</Label>
+        <input  class='text2' type="text" name="pin">
+        <input class='pin' type="submit" value="Pin">
+    </form><br>
+    </div>
+    
+    <h4 class='pin_heading'>YOUR PINNED CITIES APPEARS HERE</h4>
+    <div class='pinned_list'>
+    {% for item in pinned_list %}
+    <div><h4>{{item.city_name}} | <a class='view' href="/pinned_details/{{item.city_name}}">View details</a> 
+    <a class='remove' href="/delete_pinned/{{item.city_name}}">Remove</a>
+    </h4></div>
+    {% endfor %}
+    </div>
+</body>
+</html>
